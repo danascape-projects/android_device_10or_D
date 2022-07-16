@@ -1,4 +1,4 @@
-# Proprietary files - from UL-ASUS_X00P-WW-AOSP-17.00.2003.23-user build, unless pinned
+# Proprietary files - from UL-ASUS_D-WW-AOSP-17.00.2003.23-user build, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1962,7 +1962,7 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libfprint-x64.so
 vendor/etc/sw_config.xml
 
-# Fingerprint - from UL-ASUS_X00P-WW-16.00.1906.411-user
+# Fingerprint - from UL-ASUS_D-WW-16.00.1906.411-user
 vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 

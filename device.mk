@@ -16,7 +16,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
+$(call inherit-product, vendor/10or/D/D-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -29,7 +29,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    device/asus/X00P
+    device/10or/D
 
 # Screen density
 TARGET_SCREEN_HEIGHT := 1440
@@ -301,7 +301,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.X00P
+    android.hardware.light@2.0-service.D
 
 # Media
 PRODUCT_COPY_FILES += \

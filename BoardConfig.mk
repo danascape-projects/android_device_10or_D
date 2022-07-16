@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/asus/X00P
+DEVICE_PATH := device/10or/D
 
 # Architecture
 TARGET_ARCH := arm64
@@ -52,8 +52,8 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 
 BOARD_RAMDISK_OFFSET := 0x01000000
 
-TARGET_KERNEL_SOURCE := kernel/asus/X00P
-TARGET_KERNEL_CONFIG := X00P_defconfig
+TARGET_KERNEL_SOURCE := kernel/10or/D
+TARGET_KERNEL_CONFIG := D_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Audio
@@ -177,8 +177,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Sepolicy - Common
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
-# Sepolicy - X00P
-include device/asus/X00P-sepolicy/X00P-sepolicy.mk
+# Sepolicy - D
+include device/10or/D-sepolicy/D-sepolicy.mk
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -204,4 +204,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
-include vendor/asus/X00P/BoardConfigVendor.mk
+include vendor/10or/D/BoardConfigVendor.mk

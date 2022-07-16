@@ -15,10 +15,10 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.X00P",
+    name: "android.hardware.light@2.0-service.D",
     proprietary: true,
-    init_rc: ["android.hardware.light@2.0-service.X00P.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.X00P.xml"],
+    init_rc: ["android.hardware.light@2.0-service.D.rc"],
+    vintf_fragments: ["android.hardware.light@2.0-service.D.xml"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libhardware",

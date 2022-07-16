@@ -18,30 +18,30 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from X00P device
-$(call inherit-product, device/asus/X00P/device.mk)
+# Inherit from D device
+$(call inherit-product, device/10or/D/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
 # Device identifiers.
-PRODUCT_NAME := lineage_X00P
-PRODUCT_DEVICE := X00P
-PRODUCT_MANUFACTURER := asus
-PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_X00PD
+PRODUCT_NAME := lineage_D
+PRODUCT_DEVICE := D
+PRODUCT_MANUFACTURER := Longcheer
+PRODUCT_BRAND := 10or
+PRODUCT_MODEL := D
 
-PRODUCT_GMS_CLIENTID_BASE := android-asus
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=ZB555KL \
-    PRODUCT_NAME=ZB555KL
+PRODUCT_GMS_CLIENTID_BASE := android-10or
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="WW_X00PD-user 8.0.0 OPR1.170623.032 15.00.1801.31 release-keys"
+    PRODUCT_DEVICE=10or_D \
+    PRODUCT_NAME=10or_D
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="msm8937_64-user 8.1.0 OPM1.171019.019 255 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := asus/WW_X00PD/ASUS_X00P_2:8.0.0/OPR1.170623.032/15.00.1801.31:user/release-keys
+BUILD_FINGERPRINT := 10or/10or_D/10or_D:8.1.0/OPM1.171019.019/10or_D_V2.0.T017_180625-1642:user/release-keys

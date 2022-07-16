@@ -9,8 +9,8 @@
 set -e
 
 # Required!
-DEVICE=X00P
-VENDOR=asus
+DEVICE=D
+VENDOR=10or
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
